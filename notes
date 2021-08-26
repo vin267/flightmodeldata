@@ -1,0 +1,8 @@
+UPDATE IN SQLALCHEMY
+
+>>> y=db.session.query(Flights).get(1)
+>>> print(y.flightNumber)
+f01
+>>> y.flightNumber='ff01'
+>>> db.session.commit()
+
